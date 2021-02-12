@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+caption {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #777;
+	text-align: left;
+}
+
+table caption {
+	height: 16px;
+	color: #555;
+	background-color: #f2f2f2;
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 14px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+table caption::before {
+	content: '';
+	width: 4px;
+	height: 32px;
+	background: #00aeff;
+	border-radius: 2px;
+	/* border-top-right-radius: 2px ; */
+	/* border-bottom-right-radius: 2px ; */
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+thead {
+	background-color: blanchedalmond;
+}
+
+tbody {
+	background-color: white;
+}
+
+tfoot {
+	background-color: #ABCDEF;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+th {
+	text-align: left;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+pre {
+	background-color: #fafafa;
+	max-height: 400px;
+	overflow: auto;
+}
+
+
+
+.content {
+	width: 75%;
+	margin: 0 auto;
+	padding: 5px 15px;
+	background-color: #f1f1f1;
+}
+
+@media (min-width:768px) {
+	.content {
+		width: 90%;
+	}
+}
+
+.api-content {
+	margin: 20px 0 0 0;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.api-content div {
+	line-height: 20px;
+	padding-bottom: 16px;
+	word-break: break-all;
+	color: #777;
+}
+
+.api-content div strong {
+	color: #555;
+}
+
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.table>thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+
+.table>caption+thead>tr:first-child>td,
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>th,
+.table>thead:first-child>tr:first-child>td,
+.table>thead:first-child>tr:first-child>th {
+	border-top: 0;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #f9f9f9;
+}
+
+.table-hover>tbody>tr:hover {
+	background-color: #F5F5F5;
+}
+
+.table_fillet {
+	font-size: 16px;
+	/* text-align: center; */
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 5px #3F3F3F;
+}
+
+.table_fillet tr th {
+	background: #cdefab;
+}
+
+.table_fillet tr th:first-child,
+.table_fillet tr td:first-child {
+	/* 设置table左边边框 */
+	border-left: 2px solid #eaeaea;
+}
+
+.table_fillet tr th:last-child,
+.table_fillet tr td:last-child {
+	/* 设置table右边边框 */
+	border-right: 2px solid #eaeaea;
+}
+
+.table_fillet thead tr:first-child th:first-child {
+	border-top-left-radius: 12px;
+}
+
+.table_fillet thead tr:first-child th:last-child {
+	border-top-right-radius: 12px;
+}
+
+.table_fillet tfoot tr:last-child td:first-child {
+	border-bottom-left-radius: 12px;
+}
+
+.table_fillet tfoot tr:last-child td:last-child {
+	border-bottom-right-radius: 12px;
+}
+
+.prediv {
+	padding: 2px;
+}
+
+.prediv pre {
+	padding: 20px;
+	margin: 10px 0;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	color: #666;
+	white-space: pre;
+	line-height: 24px;
+	background-color: #fafafa;
+}
+
+.hljs {
+	padding: 0.5em;
+	display: block;
+	overflow-x: auto;
+	color: #383a42;
+	background: #fafafa;
+}
+
+.hljs-attr {
+	color: #986801;
+}
+
+.hljs-string {
+	color: #50a14f;
+}
+
+.lineface {
+	font-weight: bolder;
+	margin: 10px 0 10px -10px;
+}
+
+#floatMenu {
+	/* position: absolute; */
+	position: fixed;
+	top: 100px;
+	left: 90%;
+	/* width: 100px; */
+	/* height: 193px; */
+}
+
+#floatMenu ul {
+	font-size: 12px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#floatMenu ul li a {
+	display: block;
+	border: 1px solid #999;
+	background-color: #222;
+	border-left: 6px solid #999;
+	text-decoration: none;
+	color: #ddd;
+	height: 20px;
+	line-height: 20px;
+	padding: 3px 2px 2px 3px;
+	overflow: hidden;
+}
+
+#floatMenu ul li a:hover {
+	color: #fff;
+	background-color: #333333;
+	overflow: hidden;
+}
+
+#floatMenu ul.menu1 li a:hover {
+	border-color: #09f;
+}
+
+#floatMenu ul.menu2 li a:hover {
+	border-color: #9f0;
+}
+
+#floatMenu ul.menu3 li a:hover {
+	border-color: #f09;
+}

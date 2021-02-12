@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/api_style.css"/>
+</head>
+<body>
+<div class="content">
+
+    <a name="接口总述">
+        <div class="lineface">一、接口总述</div>
+    </a>
+    <div class="api-content">
+        <div>
+            <strong>接口地址：</strong>
+            <span class="url">http://url.cqcn/api</span>
+        </div>
+        <div>
+            <strong>返回格式：</strong>
+            <span class="url">json</span>
+        </div>
+        <div>
+            <strong>请求方式：</strong>
+            <span class="url"
+                  style="color: #a7a8a9; background-color: chartreuse;padding: 0px 5px 5px 5px;border-radius:5px">get</span>
+        </div>
+        <div>
+            <strong>请求示例：</strong>
+            <span class="url"><a href="http://url.cq.cn/api?url=http://url.cq.cn">http://url.cq.cn/api?url=http://url.cq.cn</a></span>
+        </div>
+    </div>
+
+    <a name="请求参数">
+        <div class="lineface">二、请求参数</div>
+    </a>
+    <table id="" class="table table-striped table-hover table_fillet">
+        <caption>请求参数说明：</caption>
+        <thead>
+        <tr>
+            <th>参数</th>
+            <th>类型</th>
+            <th>必须</th>
+            <th>说明</th>
+            <th>示例</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>id</td>
+            <td>int</td>
+            <td>true</td>
+            <td>ID</td>
+            <td>id=001</td>
+        </tr>
+        <tr>
+            <td>key</td>
+            <td>string</td>
+            <td>true</td>
+            <td>PAI KEY</td>
+            <td>key=sdjfbsdagjgba</td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>string</td>
+            <td>true</td>
+            <td>请求的url</td>
+            <td>url= api.mo.cn</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        </tfoot>
+    </table>
+    <br/>
+    <a name="返回参数">
+        <div class="lineface">三、返回参数</div>
+    </a>
+    <table id="" class="table table-striped table-hover">
+        <caption>返回参数说明：</caption>
+        <thead>
+        <tr>
+            <th>参数</th>
+            <th>类型</th>
+            <th>示例</th>
+            <th>说明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>success</td>
+            <td>布尔</td>
+            <td>ture</td>
+            <td>成功</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>json</td>
+            <td>{"url":"http:\/\/url.cq.cn\/9966"}</td>
+            <td>返回内容</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;url</td>
+            <td>string</td>
+            <td>http:\/\/url.cq.cn\/9966</td>
+            <td>返回的url</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <a name="返回数据">
+        <div class="lineface">四、返回数据</div>
+    </a>
+    <div class="prediv">
+				<pre><code class="json hljs">{
+<span class="hljs-attr">"success"</span>:<span class="hljs-string">"ture"</span>,
+<span class="hljs-attr">"content"</span>:{
+    <span class="hljs-attr">"url"</span>:<span class="hljs-string">"http:\/\/url.cq.cn\/9966"</span>
+}
+}</code></pre>
+    </div>
+
+</div>
+
+<div id="floatMenu">
+    <ul class="menu">
+        <li><a href="#接口总述">接口总述</a></li>
+        <li><a href="#请求参数">请求参数</a></li>
+        <li><a href="#返回参数">返回参数</a></li>
+        <li><a href="#返回数据">返回数据</a></li>
+    </ul>
+</div>
+</body>
+</html>

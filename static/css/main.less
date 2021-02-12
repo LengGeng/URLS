@@ -1,0 +1,273 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, input, text, textarea {
+  outline: none;
+  font-family: 'Arial', 'Microsoft YaHei', '黑体', '宋体', sans-serif;
+  font-size: 12px;
+}
+
+html, body {
+  background: #fff;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+.on {
+  .container {
+    .meta {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .link-area {
+      opacity: 1;
+    }
+  }
+}
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  min-height: 600px;
+  // min-width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .meta {
+    margin: 20px 0 60px 0;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: .5s all ease;
+
+    .title {
+      line-height: 1em;
+      color: #ff4665;
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      margin: 10px 0 0 0;
+      line-height: 1em;
+      color: #7e7e7e;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+  .link-area {
+    margin: 50px 0 0 0;
+    opacity: 0;
+    transition: .5s opacity ease;
+
+    input {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    #url {
+      width: 320px;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 10px;
+      border: 3px solid #bdc3c7;
+      border-radius: 5px;
+      color: #333;
+    }
+
+    #url.focus, #url:focus {
+      border-color: #ff4665;
+      transition: .2s border ease;
+    }
+
+    #submit {
+      width: 90px;
+      height: 38px;
+      margin: 10px 5px;
+      background: #ff4665;
+      border-radius: 5px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: .2s opacity ease;
+    }
+
+    #submit:hover {
+      opacity: .75;
+      background-color: aqua;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: -webkit-radial-gradient(circle, #000 10%, transparent 10.01%);
+      background-image: -o-radial-gradient(circle, #000 10%, transparent 10.01%);
+      background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+      background-repeat: no-repeat;
+      -webkit-background-size: 1000% 1000%;
+      background-size: 1000% 1000%;
+      background-position: 50%;
+      pointer-events: none;
+      -webkit-transition: background .5s, opacity 1s;
+      -o-transition: background .5s, opacity 1s;
+      transition: background .5s, opacity 1s;
+    }
+
+    #submit:active {
+      opacity: .9;
+      background-color: blue;
+    }
+  }
+
+  .footer {
+    display: block;
+    position: absolute;
+    clear: both;
+    background-color: #fff;
+    width: 100%;
+    color: #7e7e7e;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    padding: 15px 0;
+    left: 0;
+    bottom: 0;
+
+    a {
+      color: #181818;
+    }
+
+    a:hover {
+      color: #6f9;
+    }
+  }
+}
+
+/**
+
+ */
+* {
+  margin: 0;
+  padding: 0
+}
+
+body,
+form,
+html {
+  height: 100%;
+}
+
+.row {
+  margin-top: 120px;
+  min-height: 70%
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #009688;
+}
+
+.page-header {
+  margin-bottom: 40px
+}
+
+.expand-transition {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease
+}
+
+.expand-enter,
+.expand-leave {
+  opacity: 0
+}
+
+@media (max-width: 768px) {
+  .h3-xs {
+    font-size: 20px
+  }
+
+  .row-xs {
+    margin-top: 80px
+  }
+}
+
+.modal {
+  display: block
+}
+
+.alert.top {
+  position: fixed;
+  top: 30px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  z-index: 1050
+}
+
+@media (max-width: 768px) {
+  .alert.top-xs {
+    width: 80%
+  }
+}
+
+.en-markup-crop-options {
+  top: 18px !important;
+  left: 50% !important;
+  margin-left: -100px !important;
+  width: 200px !important;
+  border: 2px rgba(255, 255, 255, .38) solid !important;
+  border-radius: 4px !important
+}
+
+.en-markup-crop-options div div:first-of-type {
+  margin-left: 0 !important
+}
+
+// 随机图片
+.apiimg {
+  text-align: center;
+  vertical-align: middle
+}
+
+.img-xys {
+  margin: 0.625rem auto;
+  display: inline-block;
+  height: auto;
+  width: 40%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+@font-face {
+  font-family: Qiu;
+  src: url(../font/qiuyan.ttf)
+}
+
+.info-link {
+  margin: 6px;
+}
+
+.info-link a:not(:last-child):after {
+  content: "|";
+  margin: 0 8px;
+}

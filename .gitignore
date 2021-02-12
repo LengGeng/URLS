@@ -1,0 +1,8 @@
+# IDE
+.idea
+# ADMIN
+admins
+# 测试目录
+test
+# 配置文件
+config.php
